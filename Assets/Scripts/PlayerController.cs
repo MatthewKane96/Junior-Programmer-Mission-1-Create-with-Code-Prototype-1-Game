@@ -6,10 +6,9 @@ public class PlayerController : MonoBehaviour
 {
     //Private Variables
     public float speed = 20.0f;
-    public float turnspeed;
-    //public float turnspeed = 45.0f;
+    public float turnspeed = 45.0f;
     public float horizontalInput;
-    //private float forwardInput;
+    public float forwardInput;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -25,16 +24,20 @@ public class PlayerController : MonoBehaviour
 
         // This is where we get Player input
         horizontalInput = Input.GetAxis("Horizontal");
-        // forwardInput = Input.GetAxis("Vertical");
+        forwardInput = Input.GetAxis("Vertical");
 
-        // We Move the vehicle Vertically Forward and back
-        transform.Translate(Vector3.forward * Time.deltaTime * speed);
-        // transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
+        // We Moved the vehicle Forward Vertically and can change input speed in inspector
+        // Stage 1 transform.Translate(Vector3.forward * Time.deltaTime * speed);
+       
+        // We Move the vehicle Vertically Forward and Back
+        transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
+
         // Move the vehicle Horizontally
-        //Stage 2 transform.Translate(Vector3.right * Time.deltaTime * turnspeed);
-        transform.Translate(Vector3.right * Time.deltaTime * turnspeed * horizontalInput);
+        //Stage 1 transform.Translate(Vector3.right * Time.deltaTime * turnspeed);
+        //Stage 2 transform.Translate(Vector3.right * Time.deltaTime * turnspeed * horizontalInput);
+
         // We Turn the vehicle based on Rotation via horizontal input 
-        //transform.Rotate(Vector3.up, turnspeed * horizontalInput * Time.deltaTime);
+        transform.Rotate(Vector3.up, turnspeed * horizontalInput * Time.deltaTime);
 
 
     }
