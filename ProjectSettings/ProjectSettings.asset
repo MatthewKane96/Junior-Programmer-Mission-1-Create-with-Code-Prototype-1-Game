@@ -841,8 +841,8 @@ PlayerSettings:
   editorAssembliesCompatibilityLevel: 1
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
-  metroPackageName: Junior-Programmer-Mission-1-Create-with-Code-Prototype-1-Project
-  metroPackageVersion: 
+  metroPackageName: 
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -850,7 +850,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: Junior-Programmer-Mission-1-Create-with-Code-Prototype-1-Project
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: Junior-Programmer-Mission-1-Create-with-
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0
@@ -917,7 +917,7 @@ PlayerSettings:
   qnxGraphicConfPath: 
   apiCompatibilityLevel: 6
   captureStartupLogs: {}
-  activeInputHandler: 1
+  activeInputHandler: 2
   windowsGamepadBackendHint: 0
   cloudProjectId: 09bc4419-863e-4680-9f4b-1b9515efb145
   framebufferDepthMemorylessMode: 0
