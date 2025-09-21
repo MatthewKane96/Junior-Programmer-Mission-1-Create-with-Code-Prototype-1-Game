@@ -5,10 +5,10 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     //Private Variables
-    public float speed = 20.0f;
-    public float turnspeed = 45.0f;
-    public float horizontalInput;
-    public float forwardInput;
+    private float speed = 20.0f;
+    private float turnspeed = 45.0f;
+    private float horizontalInput;
+    private float forwardInput;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
         // We Moved the vehicle Forward Vertically and can change input speed in inspector
         // Stage 1 transform.Translate(Vector3.forward * Time.deltaTime * speed);
        
-        // We Move the vehicle Vertically Forward and Back
+        // We Move the vehicle Vertically Forward and Backward
         transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
 
         // Move the vehicle Horizontally
