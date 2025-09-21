@@ -6,8 +6,9 @@ public class PlayerController : MonoBehaviour
 {
     //Private Variables
     public float speed = 20.0f;
-    //private float turnspeed = 45.0f;
-    //private float horizontalInput;
+    public float turnspeed;
+    //public float turnspeed = 45.0f;
+    //public float horizontalInput;
     //private float forwardInput;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -29,10 +30,12 @@ public class PlayerController : MonoBehaviour
         // We Move the vehicle Vertically Forward and back
         transform.Translate(Vector3.forward * Time.deltaTime * speed);
         // transform.Translate(Vector3.forward * Time.deltaTime * speed * forwardInput);
+        // Move the vehicle Horizontally
+        transform.Translate(Vector3.right * Time.deltaTime * turnspeed);
+        //transform.Translate(Vector3.right * Time.deltaTime * turnspeed * horizontalInput);
         // We Turn the vehicle based on Rotation via horizontal input 
         //transform.Rotate(Vector3.up, turnspeed * horizontalInput * Time.deltaTime);
 
-        // Move the vehicle Horizontally
-        // transform.Translate(Vector3.right * Time.deltaTime * turnspeed * horizontalInput);
+
     }
 }
