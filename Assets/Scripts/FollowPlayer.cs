@@ -17,6 +17,7 @@ public class FollowPlayer : MonoBehaviour
 
         //Stage 1 transform.position = player.transform.position;
         //Stage 2 transform.position = player.transform.position + new Vector3(0, 4, -10);
+
         // Offset the camera behind the player by adding to the player's position  
         transform.position = player.transform.position + offset;
     }
